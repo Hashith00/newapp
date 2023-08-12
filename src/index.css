@@ -1,13 +1,131 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+
+*{
+  color: white;
+  font-family: 'Roboto', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App{
+  background-color: #343541;
+  display: flex;
+  
+}
+
+.main{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.side-bar{
+  background-color: #202123;
+  height: 100vh;
+  width: 244px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+button{
+  border: solid 0.5px rgba(225 225 225 0.5);
+  background: transparent;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+nav{
+  border: solid 0.5px rgba(225 225 225 0.5);
+  padding: 10px;
+  margin: 10px;
+}
+
+.hsitory{
+  padding: 10px;
+  margin: 10px;
+  height: 100%;
+
+}
+
+.hsitory li{
+  list-style-type: none;
+  padding: 15px 0;
+  cursor: pointer;
+}
+
+.bottom-section{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.input-container{
+  position: relative;
+  width: 100%;
+  
+  max-width: 480px;
+}
+
+ input{
+  
+ width: 100%;
+ border: none;
+ background-color: rgba(255, 255, 255, 0.5);
+ padding: 15px;
+ color: black;
+ border-radius: 5px;
+}
+
+input:focus{
+  outline: none;
+}
+
+#submit{
+  position: absolute;
+  right: -5px;
+  bottom: 14px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.feed{
+  overflow-y: scroll;
+  overflow-x: hidden; 
+  
+  width: 100%;
+  padding: 0;
+}
+
+.feed li {
+  display: flex;
+  background-color: #444654;
+  width: 100%;
+  padding: 10px;
+  margin: 20px 0;
+
+}
+
+.feed p {
+  color: rgba(225 225 225 0.8);
+  text-align: left;
+}
+
+.feed p.role{
+  width: 100px;
+  margin-right: 10px;
 }
